@@ -1,0 +1,580 @@
+/* font-family: 'Rajdhani', sans-serif; */
+
+@font-face {
+font-family: PatsySans;
+src: url("../fonts/patsy/PatsySans.otf");
+}
+
+body{
+    background-color: #000000;
+}
+
+nav{
+    background-color: rgba(0, 0, 0, .4);
+    height: 72px;
+    line-height: 72px;
+    display: flow-root;
+}
+
+.nav-wrapper{
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.logo{
+    width: 127px;
+    height: 39px;
+    margin: 17px 0 0 39px;
+}
+
+.redes{
+    display: flex;
+    flex-direction: row;
+    margin-right: 2rem;
+}
+
+.redes a{
+    padding: 0 5px;
+}
+
+.redes a img{
+    width: 18px;
+}
+
+.registrate{
+    background: #f35c26;
+    margin-top: 20px;
+    height: 30px;
+    line-height: 2;
+    padding: 0px 15px;
+    border-radius: 8px;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    margin-top: -72px;
+}
+
+.wrapper .wrapper__video{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.divider{
+    height: 3px;
+}
+
+.bg{
+    height: 100vh;
+}
+
+.parallax img{
+    /* width: 100%; */
+}
+
+
+/*** Cronometro */ 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  .contenedor {
+    color: #000000;
+    text-align: center;
+  }
+  .cartel {
+    width: 109px;
+    height: 109px;
+    padding: 10px 0px 5px 0px;
+    text-align: center;
+    display: inline-block;
+    margin: 5px;
+    /* border: 3px solid #000000; */
+    border-radius: 5px;
+  }
+  .cartel>div{
+    font-family: PatsySans;
+    font-size: 100px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+  }
+
+  .dots{
+    font-family: Roboto !important;
+    font-size: 100px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+  }
+
+  .cartel>div>h3 {
+    margin-top: 15px;
+    font-family: Rajdhani;
+    font-size: 22px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.79px;
+    text-align: center;
+    color: #fff;
+  }
+  .h3 {
+    bottom: 0;
+    margin: 0 auto ;
+  }
+  .contenedor {
+    padding-top: 6%;
+  }
+  .contenido {
+    width: 80%;
+    margin: 0 auto;
+    border: 0px solid black;
+    z-index: 10;
+  }
+  li {
+    display: inline-block;
+    font-size: 1.5em;
+    list-style-type: none;
+    padding: 1em;
+    text-transform: uppercase;
+  }
+  li span {
+    display: block;
+    font-size: 4.5rem;
+  }
+  .numeros {
+    font-family: 'Chela one', sans-serif;
+    font-size: 60px;
+    transition: .3s;
+    animation-name: fade;
+    animation-duration: 3s;
+  }
+  .responsivo1 {
+    display: inline-block
+  }
+  .responsivo2 {
+    display: inline-block
+  }
+  @media (max-width: 450px) {  
+    .contenedor {
+        padding-top: 15%;
+    }
+    .banner {
+     margin-bottom: 30px; 
+    }
+    .cartel {
+      height: 99px;
+      width: 99px;
+    }
+    .cartel>div{
+      font-size: 45px;
+    }
+    .cartel>div>h3 {
+      font-size: 15px;
+      margin-top: 0px;
+    }
+  }
+  @keyframes fade {
+      0%   {
+        opacity: 0;
+    }
+      30%   {
+        opacity: 0;
+    }  
+      100% {
+        opacity: 1;
+    }
+  }
+
+/*** fin contador */
+
+.alto{
+    height: 100vh;
+}
+
+.para{
+    margin-top: 2rem;
+    font-family: PatsySans;
+    font-size: 40px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.3;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+}
+
+.para span{
+    font-size: 50px;
+}
+
+.evento{
+    font-family: Rajdhani;
+    font-size: 25px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.89px;
+    text-align: center;
+    color: #fff;
+}
+
+.fijo {
+    background-image: url("../img/bg.png");
+    background-attachment: fixed;
+    background-size: contain;
+}
+
+.quees{
+    margin-top: 6rem;
+    font-family: PatsySans;
+    font-size: 40px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.43px;
+    text-align: center;
+    color: #fff;
+}
+
+.mas{
+    margin-top: 2rem;
+    font-family: Rajdhani;
+    font-size: 27px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+}
+
+.desdec{
+    width: 61.56%;
+    margin: 0 auto;
+}
+
+.desde{
+    font-family: Rajdhani;
+    font-size: 15px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.36;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: #fff;
+}
+
+.registratet{
+    margin-top: 3rem;
+    font-family: Rajdhani;
+    font-size: 27px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+}
+
+.rg{
+    width: 100%;
+    text-align: center;
+    margin-top: 3rem;
+    align-content: center;
+}
+
+.rgbtn{
+    background-color: #48bddf;
+    font-weight: bold;
+}
+
+.conoce{
+    margin-top: 8rem;
+    font-family: PatsySans;
+    font-size: 40px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.43px;
+    text-align: center;
+    color: #fff;
+}
+
+.line{
+    height: 4px;
+    width: 49px;
+    background-color: #f35c26;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+.border{
+    border: rgba(34, 80, 105, .51) 2px solid;
+}
+
+.blueCard{
+    background-color: rgba(34, 80, 105, .51);
+    margin: 4px;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    aspect-ratio: 1/1;
+    justify-content: center;
+}
+
+.blueCard img{
+    width: 60%;
+    margin-bottom: 3rem;
+}
+
+.blueRectangle{
+    background-color: rgba(34, 80, 105, .51);
+    margin: 4px;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    aspect-ratio: 1/.3;
+    justify-content: center;
+}
+
+.blueRectangle img{
+    width: 60%;
+    margin-bottom: 1rem;
+}
+
+.nuestros{
+    padding: 3rem;
+    font-family: PatsySans;
+    font-size: 40px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+}
+
+.prensa{
+    margin-top: 5rem;
+    font-family: PatsySans;
+    font-size: 40px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+}
+
+.linewhite{
+    height: 4px;
+    width: 49px;
+    background-color: #fff;
+    margin-top: 5px;
+    margin-bottom: 1rem;
+}
+
+.title{
+    font-family: Rajdhani;
+    font-size: 22px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: 0.79px;
+    color: #fff;
+}
+
+.description{
+    margin-bottom: 1rem;
+    font-family: Rajdhani;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: 0.5px;
+    color: #fff;
+}
+
+.prensaCard{
+    margin: 0 2rem;
+}
+
+.prensaCard img {
+    width: 100%;
+    border: 5px solid #fff;
+}
+
+.contain{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+.ir{
+    text-decoration: underline;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.29;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: #fff;
+}
+
+.donde{
+    margin-top: 7rem;
+    font-family: PatsySans;
+    font-size: 40px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.43px;
+    text-align: center;
+    color: #fff;
+}
+
+.fechas{
+    text-align: center;
+    font-family: Rajdhani;
+    font-size: 30px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.07px;
+    color: #fff;
+}
+
+.no{
+    font-family: Rajdhani;
+    font-size: 20px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.71px;
+    text-align: center;
+    color: #fff;
+}
+
+.ev{
+    margin: 0 auto;
+}
+
+.footer{
+    font-family: Rajdhani;
+    font-size: 15px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.54px;
+    text-align: center;
+    color: #fff;
+}
+
+.contactanos{
+    font-family: Rajdhani;
+    font-size: 18px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+}
+
+.correo{
+    margin-top: 3px;
+    font-family: Rajdhani;
+    font-size: 25px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+}
+
+.hpan{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.left{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 60%;
+}
+
+.logof{
+    width: 104px;
+    height: 32px;
+    margin-top: 34px;
+    margin-left: 41px;
+    margin-right: 22px;
+    margin-bottom: 34px;
+}
+
+.rigth{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.columna{
+    margin-right: 2rem;
+}
+
+.redess{
+    display: flex;
+    flex-direction: row;
+}
+
+.redess a{
+    padding: 0 8px;
+    margin-top: 3px;
+}
+
+.redess a img{
+    width: 32px;
+}
