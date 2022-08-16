@@ -5,8 +5,17 @@ font-family: PatsySans;
 src: url("../fonts/patsy/PatsySans.otf");
 }
 
+*{
+    cursor: url("../img/cursor.png");
+}
+
 body{
     background-color: #000000;
+    cursor: url("../img/cursor.png"), auto;
+}
+
+a{
+    cursor: url("../img/pointer.png"), auto;
 }
 
 nav{
@@ -63,6 +72,7 @@ nav{
 }
 
 .divider{
+    display: none;
     height: 3px;
 }
 
@@ -168,25 +178,7 @@ nav{
   .responsivo2 {
     display: inline-block
   }
-  @media (max-width: 450px) {  
-    .contenedor {
-        padding-top: 15%;
-    }
-    .banner {
-     margin-bottom: 30px; 
-    }
-    .cartel {
-      height: 99px;
-      width: 99px;
-    }
-    .cartel>div{
-      font-size: 45px;
-    }
-    .cartel>div>h3 {
-      font-size: 15px;
-      margin-top: 0px;
-    }
-  }
+
   @keyframes fade {
       0%   {
         opacity: 0;
@@ -331,6 +323,26 @@ nav{
 
 .border{
     border: rgba(34, 80, 105, .51) 2px solid;
+}
+
+.l{
+    margin-right: 2rem;
+}
+
+.c{
+    margin-right: 1rem; margin-left: 1rem;
+}
+
+.r{
+    margin-left: 2rem;
+}
+
+.rl{
+    margin-right: 1rem;
+}
+
+.rr{
+    margin-left: 1rem; 
 }
 
 .blueCard{
@@ -539,10 +551,18 @@ nav{
     width: 100%;
 }
 
+.vpan{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
 .left{
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     width: 60%;
 }
 
@@ -578,3 +598,375 @@ nav{
 .redess a img{
     width: 32px;
 }
+
+#particles-js .particles-js-canvas-el{
+    height: calc(3.1*100vh) !important;
+    margin-top: -50vh;
+}
+
+#particles-js2 .particles-js-canvas-el{
+    height: calc(2.1*100vh) !important;
+    margin-top: -72vh;
+}
+
+.registratea{
+    padding-top: 8rem;
+    font-family: PatsySans;
+    font-size: 40px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.3;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+}
+
+.egs{
+    font-family: PatsySans;
+    font-size: 50px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.04;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+}
+
+.fechasel{
+    font-family: Rajdhani;
+    font-size: 30px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.07px;
+    color: #fff;
+    text-align: center;
+}
+
+.montecito{
+    font-family: Rajdhani;
+    font-size: 20px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.71px;
+    text-align: center;
+    color: #fff;
+}
+
+.registrotxt{
+    font-family: PatsySans;
+    font-size: 40px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+    margin-top: 6rem;
+}
+
+.selecciona{
+    font-family: Rajdhani;
+    font-size: 20px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.71px;
+    text-align: center;
+    color: #fff;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+}
+
+.registrot{
+    font-family: PatsySans;
+    font-size: 40px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+    padding-top: 8rem;
+}
+
+.shadow{
+    background-color: rgba(0, 0, 0, .45);
+}
+
+.bienvenido{
+    font-family: PatsySans;
+  font-size: 40px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.3;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff;
+  padding-top: 2rem;
+  margin-bottom: 5rem;
+}
+
+.agradecemos{
+    font-family: Rajdhani;
+    font-size: 13px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.38;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+}
+
+.el{
+    font-family: Rajdhani;
+    font-size: 13px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.38;
+    letter-spacing: normal;
+    color: #fff;
+}
+
+.pre{
+    font-family: Rajdhani;
+    font-size: 24px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.38;
+    letter-spacing: normal;
+    color: #fff;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.pre span{
+    font-size: 13px;
+}
+
+.esp{
+    width: 85%;
+    margin: 0 auto;
+}
+
+input[type=text],
+input[type=email]{
+    border: 1px solid gray !important;
+    margin-top: 7px !important;
+    color: white !important;
+    padding-left: 5px !important;
+}
+
+.campo{
+    font-family: Rajdhani;
+    font-size: 10px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.36px;
+    color: #fff;
+}
+
+.dias{
+    font-family: Rajdhani;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.5px;
+    color: #fff;
+}
+
+.terminos{
+    font-family: Rajdhani;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.5px;
+    color: #fff;
+}
+
+.terminos a{
+    text-decoration: underline;
+    font-family: Rajdhani;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.5px;
+    color: #fff;
+}
+
+
+@media (max-width: 1069px) {  
+    .contenido{
+        width: 100%;
+    }
+
+    .cartel{
+        width: auto;
+    }
+
+    .wrapper{
+        height: auto;
+    }
+} 
+
+@media (max-width: 625px) {  
+
+    .alto{
+        height: auto;
+    }
+
+    .contenido{
+        width: 100%;
+    }
+
+    .cartel>div{
+        font-size: 80px;
+    }
+
+    .para{
+        font-size: 30px;
+    }
+
+    .para span{
+        font-size: 40px;
+    }
+
+    .evento{
+        font-size: 20px;
+    }
+
+    .desdec{
+        width: 85%;
+    }
+
+    .conoce{
+        margin-top: 2rem !important;
+        font-size: 30px;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .l{
+        margin-right: 2rem;
+        margin-left: 2rem;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
+    
+    .r{
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+        margin-right: 2rem;
+        margin-left: 2rem;
+    }
+
+    .c{
+        margin-right: 2rem;
+        margin-left: 2rem;
+    }
+
+    .rl{
+        margin-right: 2rem;
+        margin-left: 2rem;
+    }
+
+    .rr{
+        margin-top: 2rem;
+        margin-right: 2rem;
+        margin-left: 2rem;
+        margin-bottom: 4rem;
+    }
+
+    .prensaCard{
+        margin-bottom: 4rem;
+    }
+
+    #dondw{
+        /* height: ; */
+    }
+
+    .quees{
+        font-size: 30px;
+    }
+
+    .nuestros{
+        font-size: 40px;
+    }
+
+    .prensa{
+        font-size: 40px;
+    }
+
+    .donde{
+        font-size: 40px;
+    }
+
+    #particles-js .particles-js-canvas-el{
+        height: calc(50vh) !important;
+        margin-top: -50vh;
+    }
+    
+    #particles-js2 .particles-js-canvas-el{
+        height: calc(80vh) !important;
+        margin-top: -72vh;
+    }
+
+    .left{
+        width: 100%;
+    }
+
+    .redess a img{
+        width: 40px;
+    }
+
+} 
+
+@media (max-width: 490px) {  
+    .contenido{
+        width: 100%;
+    }
+
+    .cartel>div{
+        font-size: 65px;
+    }
+
+    .cartel>div>h3 {
+        font-size: 20px;
+      }
+
+} 
+
+@media (max-width: 430px) {  
+    .contenido{
+        width: 100%;
+    }
+
+    .cartel>div{
+        font-size: 40px;
+    }
+
+    .cartel>div>h3 {
+        font-size: 11px;
+      }
+
+} 

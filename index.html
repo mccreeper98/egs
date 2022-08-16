@@ -29,50 +29,52 @@
 
   <body>
     <main>
-      <nav>
-        <div class="nav-wrapper">
-          <a href="#!" class="brand-logo"
-            ><img src="img/logo.png" alt="EGS" class="logo"
-          /></a>
-          <a href="#" data-activates="mobile-demo" class="button-collapse"
-            ><i class="material-icons">menu</i></a
-          >
-          <ul class="right hide-on-med-and-down">
-            <li><a href="#egs">¿Qué es EGS?</a></li>
-            <li><a href="#agenda">Agenda</a></li>
-            <li><a href="#patrocinadores">Patrocinadores</a></li>
-            <li>
-              <a href="#registrate"><p class="registrate">Regístrate</p></a>
-            </li>
-            <li><a href="#prensa">Prensa</a></li>
-            <li><a href="#ubicacion">Ubicación</a></li>
-            <li><a href="#faqs">FAQS</a></li>
-            <li>
-              <div class="redes">
-                <a href="facebook.com"><img src="img/fb.png" alt="F" /></a>
-                <a href="instagram.com"><img src="img/insta.png" alt="I" /></a>
-                <a href="youtube.com"><img src="img/yt.png" alt="YT" /></a>
-              </div>
-            </li>
-          </ul>
-          <ul class="side-nav" id="mobile-demo">
-            <li><a href="#egs">¿Qué es EGS?</a></li>
-            <li><a href="#agenda">Agenda</a></li>
-            <li><a href="#patrocinadores">Patrocinadores</a></li>
-            <li><a href="#registrate">Regístrate</a></li>
-            <li><a href="#prensa">Prensa</a></li>
-            <li><a href="#ubicacion">Ubicación</a></li>
-            <li><a href="#faqs">FAQS</a></li>
-            <li>
-              <div class="redes">
-                <a href="facebook.com"><img src="img/fb.png" alt="F" /></a>
-                <a href="instagram.com"><img src="img/insta.png" alt="I" /></a>
-                <a href="youtube.com"><img src="img/yt.png" alt="YT" /></a>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <div class="navbar-fixed">
+        <nav>
+          <div class="nav-wrapper">
+            <a href="#!" class="brand-logo"
+              ><img src="img/logo.png" alt="EGS" class="logo"
+            /></a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse"
+              ><i class="material-icons">menu</i></a
+            >
+            <ul class="right hide-on-med-and-down">
+              <li><a href="#egs">¿Qué es EGS?</a></li>
+              <li><a href="#agenda">Agenda</a></li>
+              <li><a href="#patrocinadores">Patrocinadores</a></li>
+              <li>
+                <a href="registro.html"><p class="registrate">Regístrate</p></a>
+              </li>
+              <li><a href="#prensa">Prensa</a></li>
+              <li><a href="#ubicacion">Ubicación</a></li>
+              <li><a href="#faqs">FAQS</a></li>
+              <li>
+                <div class="redes">
+                  <a href="facebook.com"><img src="img/fb.png" alt="F" /></a>
+                  <a href="instagram.com"><img src="img/insta.png" alt="I" /></a>
+                  <a href="youtube.com"><img src="img/yt.png" alt="YT" /></a>
+                </div>
+              </li>
+            </ul>
+            <ul class="side-nav" id="mobile-demo">
+              <li><a href="#egs">¿Qué es EGS?</a></li>
+              <li><a href="#agenda">Agenda</a></li>
+              <li><a href="#patrocinadores">Patrocinadores</a></li>
+              <li><a href="#registrate">Regístrate</a></li>
+              <li><a href="#prensa">Prensa</a></li>
+              <li><a href="#ubicacion">Ubicación</a></li>
+              <li><a href="#faqs">FAQS</a></li>
+              <li>
+                <div class="redes">
+                  <a href="facebook.com"><img src="img/fb.png" alt="F" /></a>
+                  <a href="instagram.com"><img src="img/insta.png" alt="I" /></a>
+                  <a href="youtube.com"><img src="img/yt.png" alt="YT" /></a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
 
       <div class="wrapper">
         <video autoplay loop muted class="wrapper__video">
@@ -82,9 +84,9 @@
 
       <div class="divider"></div>
 
-      <div class="fijo">
+      <div class="fijo" >
 
-        <section class="alto" id="cronometro">
+        <section class="alto" id="particles-js">
           <div class="contenedor">
             <div class="contenido">
               <div class="contador">
@@ -112,7 +114,7 @@
                     <div class="h3"><h3>Minutos</h3></div>
                   </div>
                   <div class="cartel">
-                    <h3 class="dots">:</h3>
+                    <div class="dots">:</div>
                     <div class="h3"><h3>&nbsp;</h3></div>
                   </div>
                   <div class="cartel">
@@ -120,6 +122,13 @@
                     <div class="h3"><h3>Segundos</h3></div>
                   </div>
                 </div>
+              </div>
+            </div>
+            <div class="containers">
+              <div class="field">
+                <div class="mouse"></div>
+                <!-- <div class="scroll"></div> -->
+                <!-- <div class="arrow"></div> -->
               </div>
             </div>
           </div>
@@ -174,7 +183,7 @@
           <div class="container">
             <div class="row">
               <div class="col s12 m6 l4">
-                <div class="border" style="margin-right: 2rem;">
+                <div class="border l">
                   <div class="blueCard">
                     <img src="img/akijuku.png" alt="Akijuhu">
                     <a class="waves-effect waves-light btn rgbtn">VER AGENDA</a>
@@ -183,7 +192,7 @@
               </div>
 
               <div class="col s12 m6 l4">
-                <div class="border" style="margin-right: 1rem; margin-left: 1rem;">
+                <div class="border c">
                   <div class="blueCard">
                     <img src="img/infinito.png" alt="Akijuhu">
                     <a class="waves-effect waves-light btn rgbtn">VER AGENDA</a>
@@ -192,7 +201,7 @@
               </div>
 
               <div class="col s12 m6 l4">
-                <div class="border" style="margin-left: 2rem;">
+                <div class="border r">
                   <div class="blueCard">
                     <img src="img/metaversium.png" alt="Akijuhu">
                     <a class="waves-effect waves-light btn rgbtn">VER AGENDA</a>
@@ -203,7 +212,7 @@
 
             <div class="row">
               <div class="col s12 m6 l6">
-                <div class="border" style="margin-right: 1rem;">
+                <div class="border rl">
                   <div class="blueRectangle">
                     <img src="img/tournament.png" alt="Akijuhu">
                     <a class="waves-effect waves-light btn rgbtn">VER AGENDA</a>
@@ -211,7 +220,7 @@
                 </div>
               </div>
               <div class="col s12 m6 l6">
-                <div class="border" style="margin-left: 1rem;">
+                <div class="border rr">
                   <div class="blueRectangle">
                     <img src="img/tournament.png" alt="Akijuhu">
                     <a class="waves-effect waves-light btn rgbtn">VER AGENDA</a>
@@ -237,10 +246,10 @@
         </section>
       </div>
       
-      <div class="fijo">
-        <div class="divider"></div>
+      <div class="fijo" >
+        <div class="divider" ></div>
 
-        <section class="alto" id="prensa">
+        <section class="alto" id="particles-js2">
 
           <p class="prensa">
             Prensa
@@ -319,13 +328,14 @@
           <br>
           <div class="center">
             <a class="waves-effect waves-light btn rgbtn">IR AL EVENTO</a>
+            <br><br>
           </div>
         </section>
       </div>
 
       <div class="divider"></div>
       <div class="black">
-        <div class="hpan">
+        <div class="hpan hide-on-med-and-down ">
           <div class="left">
             <img src="img/logo.png" alt="EGS" class="logof"> 
             <p class="footer">
@@ -354,6 +364,37 @@
           </div>
         </div>
       </div>
+
+        <div class="vpan hide-on-large-only">
+          <div class="left">
+            <img src="img/logo.png" alt="EGS" class="logof"> 
+            <div class="columna">
+              <p class="contactanos">
+                Contáctanos
+              </p>
+              <p class="correo">
+                hola@egs.com
+              </p>
+            </div>
+            <div class="columna">
+              <p class="contactanos">
+                Síguenos
+              </p>
+              <div class="redess">
+                <a href="facebook.com"><img src="img/fb.png" alt="F" /></a>
+                <a href="instagram.com"><img src="img/insta.png" alt="I" /></a>
+                <a href="youtube.com"><img src="img/yt.png" alt="YT" /></a>
+              </div>
+            </div>
+          </div>
+          <div style="padding-bottom: 2rem; padding-top: 1rem;">
+            <p class="footer">
+              Electronic Game Show ®2022 · Aviso de Privacidad · Términos y Condiciones
+            </p>
+            
+          </div>
+        </div>
+      </div>
     </main>
 
     <!--Import jQuery before materialize.js-->
@@ -362,6 +403,8 @@
       src="https://code.jquery.com/jquery-3.2.1.min.js"
     ></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/app.js"></script>
 
     <script>
       $(document).ready(function () {
