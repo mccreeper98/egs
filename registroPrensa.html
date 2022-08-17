@@ -29,61 +29,47 @@
 
   <body>
     <main>
-      <div class="navbar-fixed">
+      <div class="navbar-fixed" >
         <nav>
           <div class="nav-wrapper">
-            <a href="#!" class="brand-logo"
+            <a href="index.html" class="brand-logo"
               ><img src="img/logo.png" alt="EGS" class="logo"
             /></a>
             <a href="#" data-activates="mobile-demo" class="button-collapse"
               ><i class="material-icons">menu</i></a
             >
             <ul class="right hide-on-med-and-down">
-              <li><a href="#egs">¿Qué es EGS?</a></li>
-              <li><a href="#agenda">Agenda</a></li>
-              <li><a href="#patrocinadores">Patrocinadores</a></li>
+              <li><a href="index.html#que">¿Qué es EGS?</a></li>
+              <li><a href="index.html#agenda">Agenda</a></li>
+              <li><a href="index.html#patrocinadoresp">Patrocinadores</a></li>
               <li>
-                <a href="#registrate"><p class="registrate">Regístrate</p></a>
+                <a href="registro.html"><p class="registrate">Regístrate</p></a>
               </li>
-              <li><a href="#prensa">Prensa</a></li>
-              <li><a href="#ubicacion">Ubicación</a></li>
-              <li><a href="#faqs">FAQS</a></li>
-              <li>
-                <div class="redes">
-                  <a href="facebook.com"><img src="img/fb.png" alt="F" /></a>
-                  <a href="instagram.com"><img src="img/insta.png" alt="I" /></a>
-                  <a href="youtube.com"><img src="img/yt.png" alt="YT" /></a>
-                </div>
-              </li>
+              <li><a href="index.html#prensa">Prensa</a></li>
+              <li><a href="index.html#ubicacion">Ubicación</a></li>
+              <li><a href="faqs.html">FAQS</a></li>
             </ul>
             <ul class="side-nav" id="mobile-demo">
-              <li><a href="#egs">¿Qué es EGS?</a></li>
-              <li><a href="#agenda">Agenda</a></li>
-              <li><a href="#patrocinadores">Patrocinadores</a></li>
-              <li><a href="#registrate">Regístrate</a></li>
-              <li><a href="#prensa">Prensa</a></li>
-              <li><a href="#ubicacion">Ubicación</a></li>
-              <li><a href="#faqs">FAQS</a></li>
-              <li>
-                <div class="redes">
-                  <a href="facebook.com"><img src="img/fb.png" alt="F" /></a>
-                  <a href="instagram.com"><img src="img/insta.png" alt="I" /></a>
-                  <a href="youtube.com"><img src="img/yt.png" alt="YT" /></a>
-                </div>
-              </li>
+              <li><a href="index.html#que">¿Qué es EGS?</a></li>
+              <li><a href="index.html#agenda">Agenda</a></li>
+              <li><a href="index.html#patrocinadoresp">Patrocinadores</a></li>
+              <li><a href="registro.html">Regístrate</a></li>
+              <li><a href="index.html#prensa">Prensa</a></li>
+              <li><a href="index.html#ubicacion">Ubicación</a></li>
+              <li><a href="faqs.html">FAQS</a></li>
             </ul>
           </div>
         </nav>
       </div>
       
-      <div class="fijo" style="margin-top: -72px;">
+      <div class="fijo" style="margin-top: -72px;" >
 
-        <section class="" id="dondw">
+        <section id="p1">
           <p class="registrot">REGISTRO</p>
           <div class="line"></div>
 
           <div class="container shadow">
-            <div class="container">
+            <div class="container" >
                 <p class="bienvenido">
                     ¡Bienvenido a EGS!
                   </p>
@@ -107,6 +93,9 @@
                 <br><br>
             </div>
           </div>
+        </section>
+        <br>
+          <section id="p2">
 
           <div class="container">
             
@@ -119,69 +108,69 @@
 
             <div class="esp">
                 <div class="row">
-                    <form class="col s12">
+                    <form class="col s12" action="action.php" method="post" enctype="multipart/form-data">
                         <div class="row">
                             <div class="input-field col s6">
-                                <input id="name" placeholder="&nbsp;" type="text" class="validate">
+                                <input id="name" name="name" placeholder="&nbsp;" type="text">
                                 <label for="name">Nombre</label>
                             </div>
                             <div class="input-field col s6">
-                                <input id="secondname" placeholder="&nbsp;" type="text" class="validate">
+                                <input id="secondname" name="secondname" placeholder="&nbsp;" type="text">
                                 <label for="secondname">Segundo nombre</label>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="input-field col s6">
-                                <input id="paterno" placeholder="&nbsp;" type="text" class="validate">
+                                <input id="paterno" name="paterno" placeholder="&nbsp;" type="text">
                                 <label for="paterno">Primer apellido</label>
                             </div>
                             <div class="input-field col s6">
-                                <input id="materno" placeholder="&nbsp;" type="text" class="validate">
+                                <input id="materno" name="materno" placeholder="&nbsp;" type="text">
                                 <label for="materno">Segundo apellido</label>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="input-field col s6">
-                                <input id="corporativo" placeholder="&nbsp;" type="email" class="validate">
+                                <input id="corporativo" name="corporativo" placeholder="&nbsp;" type="email">
                                 <label for="corporativo">Mail de la empresa a la que perteneces</label>
                             </div>
                             <div class="input-field col s6">
-                                <input id="personal" placeholder="&nbsp;" type="email" class="validate">
+                                <input id="personal" name="personal" placeholder="&nbsp;" type="email">
                                 <label for="personal">Mail personal</label>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="input-field col s6">
-                                <input id="puesto" placeholder="&nbsp;" type="text" class="validate">
+                                <input id="puesto" name="puesto" placeholder="&nbsp;" type="text">
                                 <label for="puesto">Puesto</label>
                             </div>
                             <div class="input-field col s6">
-                                <input id="sitio" placeholder="&nbsp;" type="text" class="validate">
+                                <input id="sitio" name="sitio" placeholder="&nbsp;" type="text">
                                 <label for="sitio">Sitio web</label>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="input-field col s6">
-                                <input id="face" placeholder="&nbsp;" type="text" class="validate">
+                                <input id="face" name="face" placeholder="&nbsp;" type="text">
                                 <label for="face">Página oficial de tu medio en Facebook</label>
                             </div>
                             <div class="input-field col s6">
-                                <input id="insta" placeholder="&nbsp;" type="text" class="validate">
+                                <input id="insta" name="insta" placeholder="&nbsp;" type="text">
                                 <label for="insta">Página oficial de tu medio en Intagram</label>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="input-field col s6">
-                                <input id="twitter" placeholder="&nbsp;" type="text" class="validate">
+                                <input id="twitter" name="twitter" placeholder="&nbsp;" type="text">
                                 <label for="twitter">Página oficial de tu medio en Twitter</label>
                             </div>
                             <div class="input-field col s6">
-                                <input id="linkedin" placeholder="&nbsp;" type="text" class="validate">
+                                <input id="linkedin" name="linkedin" placeholder="&nbsp;" type="text">
                                 <label for="linkedin">Página oficial de tu medio en Linkedin</label>
                             </div>
                         </div>
@@ -192,21 +181,21 @@
 
                         <div class="hpan" style="justify-content: start;">
                             <p>
-                                <input type="checkbox" id="dia4" />
+                                <input type="checkbox" id="dia4" name="dia4" />
                                 <label for="dia4">4 de noviembre</label>
                             </p>
 
                             <div style="width: 4rem;"></div>
 
                             <p>
-                                <input type="checkbox" id="dia5" />
+                                <input type="checkbox" id="dia5" name="dia5" />
                                 <label for="dia5">5 de noviembre</label>
                             </p>
 
                             <div style="width: 4rem;"></div>
 
                             <p>
-                                <input type="checkbox" id="dia6" />
+                                <input type="checkbox" id="dia6" name="dia6" />
                                 <label for="dia6">6 de noviembre</label>
                             </p>
                         </div>
@@ -215,30 +204,32 @@
                         <div class="row">
                             <div class="file-field input-field">
                                 <div class="file-path-wrapper" style="float: left; width: 49%; padding-right: 10px;">
-                                    <input id="ide" class="file-path validate" type="text" placeholder="Elige una imagen">
-                                    <label for="ide" style="padding-left: 10px;">Identificación oficial (INE o Pasaporte)</label>
+                                    <input id="identificacion" name="identificacion" class="file-path" type="text" placeholder="Elige una imagen">
+                                    <label for="identificacion" style="padding-left: 10px;">Identificación oficial (INE o Pasaporte)</label>
                                 </div>
-                                <div class="btn" style="margin-top: 8px; margin-left: 10px;">
+                                <div class="btn" style="margin-top: 8px; margin-left: 10px; background-color: #48bddf;">
                                     <span>SELECCIONAR IMAGEN</span>
-                                    <input type="file" style="height: 64px;">
+                                    <input type="file" style="height: 64px;" name="archivo">
                                 </div>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="input-field col s6">
-                                <input id="link" placeholder="&nbsp;" type="text" class="validate">
+                                <input id="link" name="link" placeholder="&nbsp;" type="text">
                                 <label for="link">Link de cobertura de Gaming Partners</label>
                             </div>
                             <div class="input-field col s6">
-                                <input id="link1" placeholder="&nbsp;" type="text" class="validate">
+                                <input id="link1" name="link1" placeholder="&nbsp;" type="text">
                                 <label for="link1">Link de cobertura de Gaming Partners</label>
                             </div>
                         </div>
 
                         <p class="terminos">Al registrarte aceptas los <a href="">Términos y Condiciones</a> y <a href="">Aviso de Privacidad</a></p>
                         <br>
-                        <center><a class="waves-effect waves-light btn rgbtn">REGISTRARME</a></center>
+                        <center>
+                          <button class="btn waves-effect waves-light rgbtn" type="submit" id="action" name="action">REGISTRARME</button>
+                        </center>
                         
                     </form>
                     </div>
@@ -251,7 +242,7 @@
 
       <div class="divider"></div>
       <div class="black">
-        <div class="hpan show-on-large">
+        <div class="hpan hide-on-med-and-down">
           <div class="left">
             <img src="img/logo.png" alt="EGS" class="logof"> 
             <p class="footer">
@@ -319,38 +310,27 @@
       src="https://code.jquery.com/jquery-3.2.1.min.js"
     ></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/regpren.js"></script>
     <script src="js/particles.js"></script>
-    <script src="js/app.js"></script>
+    <script src="js/apprp.js"></script>
 
     <script>
       $(document).ready(function () {
         $(".button-collapse").sideNav();
-        $(".parallax").parallax();
+
+        $(window).scroll(function(){
+          var barra = $(window).scrollTop();
+          var posicion = barra * 1.2;
+
+          $('.fijo').css({
+            'background-position': '0 -'+posicion+'px'
+          });
+
+          console.log(posicion);
+        });
       });
 
-      const second = 1000,
-        minute = second * 60,
-        hour = minute * 60,
-        day = hour * 24;
-
-      let countDown = new Date("Nov 04, 2022 00:00:00").getTime(),
-        x = setInterval(function () {
-          let now = new Date().getTime(),
-            distance = countDown - now;
-
-          (document.getElementById("dias").innerText = Math.floor(
-            distance / day
-          )),
-            (document.getElementById("horas").innerText = Math.floor(
-              (distance % day) / hour
-            )),
-            (document.getElementById("minutos").innerText = Math.floor(
-              (distance % hour) / minute
-            )),
-            (document.getElementById("segundos").innerText = Math.floor(
-              (distance % minute) / second
-            ));
-        }, second);
     </script>
   </body>
 </html>
