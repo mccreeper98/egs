@@ -67,7 +67,7 @@
         <section id="p1">
           <p class="registrot">REGISTRO</p>
           <div class="line"></div>
-
+          <br><br>
           <div class="container shadow">
             <div class="container" >
                 <p class="bienvenido">
@@ -110,66 +110,66 @@
                 <div class="row">
                     <form class="col s12" action="action.php" method="post" enctype="multipart/form-data">
                         <div class="row">
-                            <div class="input-field col s6">
+                            <div class="input-field col s12 m6 l6">
                                 <input id="name" name="name" placeholder="&nbsp;" type="text">
                                 <label for="name">Nombre</label>
                             </div>
-                            <div class="input-field col s6">
+                            <div class="input-field col s12 m6 l6">
                                 <input id="secondname" name="secondname" placeholder="&nbsp;" type="text">
                                 <label for="secondname">Segundo nombre</label>
                             </div>
                         </div>
 
                         <div class="row">
-                            <div class="input-field col s6">
+                            <div class="input-field col s12 m6 l6">
                                 <input id="paterno" name="paterno" placeholder="&nbsp;" type="text">
                                 <label for="paterno">Primer apellido</label>
                             </div>
-                            <div class="input-field col s6">
+                            <div class="input-field col s12 m6 l6">
                                 <input id="materno" name="materno" placeholder="&nbsp;" type="text">
                                 <label for="materno">Segundo apellido</label>
                             </div>
                         </div>
 
                         <div class="row">
-                            <div class="input-field col s6">
+                            <div class="input-field col s12 m6 l6">
                                 <input id="corporativo" name="corporativo" placeholder="&nbsp;" type="email">
                                 <label for="corporativo">Mail de la empresa a la que perteneces</label>
                             </div>
-                            <div class="input-field col s6">
+                            <div class="input-field col s12 m6 l6">
                                 <input id="personal" name="personal" placeholder="&nbsp;" type="email">
                                 <label for="personal">Mail personal</label>
                             </div>
                         </div>
 
                         <div class="row">
-                            <div class="input-field col s6">
+                            <div class="input-field col s12 m6 l6">
                                 <input id="puesto" name="puesto" placeholder="&nbsp;" type="text">
                                 <label for="puesto">Puesto</label>
                             </div>
-                            <div class="input-field col s6">
+                            <div class="input-field col s12 m6 l6">
                                 <input id="sitio" name="sitio" placeholder="&nbsp;" type="text">
                                 <label for="sitio">Sitio web</label>
                             </div>
                         </div>
 
                         <div class="row">
-                            <div class="input-field col s6">
+                            <div class="input-field col s12 m6 l6">
                                 <input id="face" name="face" placeholder="&nbsp;" type="text">
                                 <label for="face">Página oficial de tu medio en Facebook</label>
                             </div>
-                            <div class="input-field col s6">
+                            <div class="input-field col s12 m6 l6">
                                 <input id="insta" name="insta" placeholder="&nbsp;" type="text">
                                 <label for="insta">Página oficial de tu medio en Intagram</label>
                             </div>
                         </div>
 
                         <div class="row">
-                            <div class="input-field col s6">
+                            <div class="input-field col s12 m6 l6">
                                 <input id="twitter" name="twitter" placeholder="&nbsp;" type="text">
                                 <label for="twitter">Página oficial de tu medio en Twitter</label>
                             </div>
-                            <div class="input-field col s6">
+                            <div class="input-field col s12 m6 l6">
                                 <input id="linkedin" name="linkedin" placeholder="&nbsp;" type="text">
                                 <label for="linkedin">Página oficial de tu medio en Linkedin</label>
                             </div>
@@ -209,17 +209,17 @@
                                 </div>
                                 <div class="btn" style="margin-top: 8px; margin-left: 10px; background-color: #48bddf;">
                                     <span>SELECCIONAR IMAGEN</span>
-                                    <input type="file" style="height: 64px;" name="archivo">
+                                    <input type="file" name="archivo" class="impf">
                                 </div>
                             </div>
                         </div>
 
                         <div class="row">
-                            <div class="input-field col s6">
+                            <div class="input-field col s12 m6 l6">
                                 <input id="link" name="link" placeholder="&nbsp;" type="text">
                                 <label for="link">Link de cobertura de Gaming Partners</label>
                             </div>
-                            <div class="input-field col s6">
+                            <div class="input-field col s12 m6 l6">
                                 <input id="link1" name="link1" placeholder="&nbsp;" type="text">
                                 <label for="link1">Link de cobertura de Gaming Partners</label>
                             </div>
@@ -313,7 +313,7 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="js/regpren.js"></script>
     <script src="js/particles.js"></script>
-    <script src="js/apprp.js"></script>
+    <!-- <script src="js/apprp.js"></script> -->
 
     <script>
       $(document).ready(function () {
@@ -321,7 +321,7 @@
 
         $(window).scroll(function(){
           var barra = $(window).scrollTop();
-          var posicion = barra * 1.2;
+          var posicion = barra * .8;
 
           $('.fijo').css({
             'background-position': '0 -'+posicion+'px'

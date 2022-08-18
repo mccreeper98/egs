@@ -243,11 +243,11 @@ nav{
 }
 
 .ubicacion{
-    padding-bottom: 11rem;
+    padding-bottom: 4rem;
 }
 
 .quees{
-    margin-top: 6rem;
+    margin-top: 3rem;
     font-family: PatsySans;
     font-size: 40px;
     font-weight: normal;
@@ -285,7 +285,7 @@ nav{
     font-style: normal;
     line-height: 2.36;
     letter-spacing: 0.5px;
-    text-align: center;
+    text-align: justify;
     color: #fff;
 }
 
@@ -314,7 +314,13 @@ nav{
     font-weight: bold;
 }
 
+.rgbtnn{
+    background-color: #48bddf;
+    font-weight: bold;
+}
+
 .conoce{
+    padding-top: 6rem;
     margin-top: 8rem;
     font-family: PatsySans;
     font-size: 40px;
@@ -448,6 +454,7 @@ nav{
     line-height: 1.71;
     letter-spacing: 0.5px;
     color: #fff;
+    text-align: justify;
 }
 
 .prensaCard{
@@ -898,10 +905,36 @@ input[type=email]{
 
     .wrapper{
         height: auto;
+        margin-top: 15px;
     }
+
+    .side-nav{
+        background-color: rgba(0, 0, 0, .8);
+    }
+
+    .side-nav li a{
+        color: #fff;
+    }
+
 } 
 
+.impf{
+    height: 64px;
+}
+
 @media (max-width: 625px) {  
+
+    .side-nav{
+        background-color: rgba(0, 0, 0, .8);
+    }
+
+    .side-nav li a{
+        color: #fff;
+    }
+
+    .fijo{
+        background-image: url("../img/bg6.png");
+    }
 
     .alto{
         height: auto;
@@ -944,6 +977,11 @@ input[type=email]{
         margin-bottom: 2rem;
         margin-top: 2rem;
     }
+
+    .mas{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
     
     .r{
         margin-bottom: 2rem;
@@ -973,10 +1011,6 @@ input[type=email]{
         margin-bottom: 4rem;
     }
 
-    #dondw{
-        /* height: ; */
-    }
-
     .quees{
         font-size: 30px;
     }
@@ -990,7 +1024,13 @@ input[type=email]{
     }
 
     .donde{
+        padding-left: 1rem;
+        padding-right: 1rem;
         font-size: 40px;
+    }
+
+    .fechas{
+        font-size: 21px;
     }
 
     #particles-js .particles-js-canvas-el{
@@ -1009,6 +1049,34 @@ input[type=email]{
 
     .redess a img{
         width: 40px;
+    }
+
+    .registratea{
+        font-size: 30px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .egs{
+        margin-top: 2rem;
+    }
+
+    .fechasel{
+        font-size: 21px;
+    }
+
+    .montecito{
+        font-size: 17px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .rgbtnn{
+        margin-top: 2rem;
+    }
+
+    .impf{
+        height: 130px;
     }
 
 } 

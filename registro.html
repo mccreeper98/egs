@@ -96,17 +96,16 @@
 
           <div class="container">
             <div class="hpan" style="justify-content: space-evenly;">
-                <a class="waves-effect waves-light btn rgbtn">ASISTENTE</a>
-                <a href="registroPrensa.html" class="waves-effect waves-light btn rgbtn">PRENSA</a>
-                <a class="waves-effect waves-light btn rgbtn">PATROCINADOR</a>
-                <a class="waves-effect waves-light btn rgbtn">TÉCNICO</a>
+                <a class="waves-effect waves-light btn rgbtnn">ASISTENTE</a>
+                <a href="registroPrensa.html" class="waves-effect waves-light btn rgbtnn">PRENSA</a>
+                <a class="waves-effect waves-light btn rgbtnn">PATROCINADOR</a>
+                <a class="waves-effect waves-light btn rgbtnn">TÉCNICO</a>
             </div>
           </div>
         </section>
         <br><br>
       </div>
 
-      <div class="divider"></div>
       <div class="black">
         <div class="hpan hide-on-med-and-down ">
           <div class="left">
@@ -185,7 +184,8 @@
 
         $(window).scroll(function(){
           var barra = $(window).scrollTop();
-          var posicion = barra * 3;
+          var multiplo = $(window).width() < 500 ? 0.1 : 0.3;
+          var posicion = barra * multiplo;
 
           $('.fijo').css({
             'background-position': '0 -'+posicion+'px'

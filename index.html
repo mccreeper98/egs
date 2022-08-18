@@ -51,11 +51,17 @@
             </ul>
             <ul class="side-nav" id="mobile-demo">
               <li><a href="#que">¿Qué es EGS?</a></li>
+              <br>
               <li><a href="#agenda">Agenda</a></li>
+              <br>
               <li><a href="#patrocinadoresp">Patrocinadores</a></li>
-              <li><a href="registro.html">Regístrate</a></li>
+              <br>
+              <li><a href="registro.html"><p class="registrate">Regístrate</p></a></li>
+              <br>
               <li><a href="#prensa">Prensa</a></li>
+              <br>
               <li><a href="#ubicacion">Ubicación</a></li>
+              <br>
               <li><a href="faqs.html">FAQS</a></li>
             </ul>
           </div>
@@ -66,7 +72,7 @@
         <video autoplay loop muted class="wrapper__video">
           <source src="img/headervid.mp4" />
         </video>
-        <div class='icon-scroll'></div>
+        <div class='icon-scroll hide-on-med-and-down'></div>
       </div>
 
       <div class="fijo" >
@@ -217,7 +223,6 @@
 
       </div>
 
-      <div class="divider"></div>
       <div class="black">
         <section id="patrocinadores">
           <p class="nuestros">
@@ -246,7 +251,7 @@
       </div>
       
       <div class="fijo" id="prensa">
-<br>
+        <br>
         <section class="alto" id="particles-js2">
 
           <p class="prensa">
@@ -331,7 +336,7 @@
       </div>
 
       <div class="black">
-        <div class="hpan hide-on-med-and-down ">
+        <div class="hpan hide-on-med-and-down">
           <div class="left">
             <img src="img/logo.png" alt="EGS" class="logof"> 
             <p class="footer">
@@ -400,7 +405,7 @@
     ></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script src="js/particles.js"></script>
-    <script src="js/app.js"></script>
+    <!-- <script src="js/app.js"></script> -->
 
     <script>
       $(document).ready(function () {
@@ -408,7 +413,8 @@
 
         $(window).scroll(function(){
           var barra = $(window).scrollTop();
-          var posicion = barra * 0.01;
+          var multiplo = $(window).width() < 500 ? 0.03 : 0.3;
+          var posicion = barra * multiplo;
 
           $('.fijo').css({
             'background-position': '0 -'+posicion+'px'
