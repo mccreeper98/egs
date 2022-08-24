@@ -22,6 +22,7 @@
       media="screen,projection"
     />
     <link type="text/css" rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/sccroll.css">
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -72,15 +73,22 @@
         <video autoplay loop muted class="wrapper__video">
           <source src="img/headervid.mp4" />
         </video>
-        <div class='icon-scroll hide-on-med-and-down'></div>
+        <!-- <div class='icon-scroll hide-on-med-and-down'></div> -->
+        <div class="scroll-prompt img-responsive" scroll-prompt="" ng-show="showPrompt" style="opacity: 1;">
+          <CENTER><a href="#section-about" style="cursor: pointer;"><p style="font-size: .75rem; color: #ffffff;">DESLIZA HACIA ABAJO</p></a></CENTER>
+          <div class="scroll-prompt-arrow-container">
+              <div class="scroll-prompt-arrow"><div></div></div>
+              <div class="scroll-prompt-arrow"><div></div></div>
+          </div>
+      </div>
       </div>
 
       <div class="fijo" >
 
-        <section class="alto" id="particles-js">
+        <section class="" id="particles-js">
           <div class="contenedor">
             <div class="contenido">
-              <div class="contador">
+              <div class="contador  ">
                 <div class="responsivo1">
                   <div class="cartel">
                     <div id="dias"></div>
@@ -115,44 +123,46 @@
                 </div>
               </div>
             </div>
-            <div class="containers">
-              <div class="field">
-                <div class="mouse"></div>
-                <!-- <div class="scroll"></div> -->
-                <!-- <div class="arrow"></div> -->
-              </div>
-            </div>
           </div>
   
-          <p class="para">
-            Para el regreso del legendario <br><span>Electronic Game Show</span>
-          </p>
-  
-          <p class="evento">
-            El evento gaming más importante de México <br>y pionero en América Latina.
-          </p>
-        </section>
-        
-        <section class="alto" id="que">
-          <p class="quees">
-            ¿Qué es “EGS” Electronic <br> Game Show?
-          </p>
-
-          <div class="line"></div>
-
-          <p class="mas">
-            Más de 13.5 millones de asistentes
-          </p>
-
-          <div class="desdec">
-            <p class="desde">
-              Desde su primera versión en el año 2002 se posiciónó rápidamente como el evento gaming más importante. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
+          <div class=" container  ">
+            <p class="para">
+              <span>ENTERTAINMENT  GAMING SHOW</span>
+            </p>
+    
+            <p class="evento">
+              El evento de gaming <br> más importante de México y LATAM.
             </p>
           </div>
-
-          <p class="registratet">
-            ¡Regístrate al evento!
-          </p>
+        </section>
+        
+        <section class="" id="que">
+          <div class="container  ">
+            <p class="quees ">
+              Esto es EGS edición RESPAWN
+            </p>
+  
+            <div class="line"></div>
+  
+            <br>
+  
+            <!-- <p class="mas">
+              Más de 13.5 millones de asistentes
+            </p> -->
+  
+            <div class="desdec">
+              <p class="desde">
+                El primer evento que posicionó a México dentro de la industria de los videojuegos como uno de los mercados más grandes en América Latina.
+                <br><br>
+                Hoy regresa con la edición RESPAWN en donde evolucionamos como lo hizo el gaming.
+                <br>
+              </p>
+            </div>
+  
+            <p class="registratet">
+              ¡La edición en donde renacen los verdaderos gamers!
+            </p>
+          </div>
 
           <div class="rg">
             <a class="waves-effect waves-light btn rgbtn">REGISTRARME</a>
@@ -252,7 +262,7 @@
       
       <div class="fijo" id="prensa">
         <br>
-        <section class="alto" id="particles-js2">
+        <section class="" id="particles-js2">
 
           <p class="prensa">
             Prensa
@@ -413,7 +423,7 @@
 
         $(window).scroll(function(){
           var barra = $(window).scrollTop();
-          var multiplo = $(window).width() < 500 ? 0.03 : 0.3;
+          var multiplo = $(window).width() < 500 ? 0.03 : 0.32;
           var posicion = barra * multiplo;
 
           $('.fijo').css({

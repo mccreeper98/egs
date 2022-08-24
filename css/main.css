@@ -10,22 +10,40 @@ body::-webkit-scrollbar {
 }
 
 @font-face {
-font-family: PatsySans;
-src: url("../fonts/patsy/PatsySans.otf");
+    font-family: "Rajdhani";
+    src: local(Rajdhani Light), url("../fonts/rajdhani/Rajdhani-Light.ttf");
+    font-weight: 300;
 }
 
-*{
-    cursor: url("../img/cursor.png");
+@font-face {
+    font-family: "Rajdhani";
+    src: local(Rajdhani Regular), url("../fonts/rajdhani/Rajdhani-Regular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Rajdhani";
+    src: local(Rajdhani Medium), url("../fonts/rajdhani/Rajdhani-Medium.ttf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Rajdhani";
+    src: local(Rajdhani Semibold), url("../fonts/rajdhani/Rajdhani-SemiBold.ttf");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Rajdhani";
+    src: local(Rajdhani Bold), url("../fonts/rajdhani/Rajdhani-Bold.ttf");
+    font-weight: 700;
 }
 
 body{
     background-color: #000000;
-    cursor: url("../img/cursor.png"), auto;
 }
 
-a{
-    cursor: url("../img/pointer.png"), auto;
-}
+
 
 nav{
     background-color: rgba(0, 0, 0, .4);
@@ -34,14 +52,17 @@ nav{
     display: flow-root;
 }
 
+li a{
+    font-family: Rajdhani;
+}
+
 .nav-wrapper{
     background-color: rgba(0, 0, 0, .4);
 }
 
 .logo{
-    width: 127px;
-    height: 39px;
-    margin: 17px 0 0 39px;
+    height: 72px;
+    margin: 0 0 0 39px;
 }
 
 .redes{
@@ -110,15 +131,16 @@ nav{
     border-radius: 5px;
   }
   .cartel>div{
-    font-family: PatsySans;
+    font-family: Rajdhani;
     font-size: 100px;
-    font-weight: normal;
+    font-weight: bold;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
     letter-spacing: normal;
     text-align: center;
     color: #fff;
+
   }
 
   .dots{
@@ -137,13 +159,14 @@ nav{
     margin-top: 15px;
     font-family: Rajdhani;
     font-size: 22px;
-    font-weight: 600;
+    font-weight: bold;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
     letter-spacing: 0.79px;
     text-align: center;
-    color: #fff;
+    color: #d90e90;
+    text-transform: uppercase;
   }
   .h3 {
     bottom: 0;
@@ -204,9 +227,9 @@ nav{
 
 .para{
     margin-top: 2rem;
-    font-family: PatsySans;
+    font-family: Rajdhani;
     font-size: 40px;
-    font-weight: normal;
+    font-weight: bold;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.3;
@@ -216,19 +239,20 @@ nav{
 }
 
 .para span{
-    font-size: 50px;
+    font-size: 65px;
 }
 
 .evento{
     font-family: Rajdhani;
-    font-size: 25px;
-    font-weight: bold;
+    font-size: 35px;
+    font-weight: 600;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
     letter-spacing: 0.89px;
     text-align: center;
     color: #fff;
+    text-transform: uppercase;
 }
 
 .fijo {
@@ -236,6 +260,7 @@ nav{
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
+    box-shadow:inset 0 0 0 2000px rgba(0, 0, 0, 0.15);
 }
 
 #que{
@@ -248,9 +273,9 @@ nav{
 
 .quees{
     margin-top: 3rem;
-    font-family: PatsySans;
-    font-size: 40px;
-    font-weight: normal;
+    font-family: Rajdhani;
+    font-size: 55px;
+    font-weight: bold;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
@@ -279,11 +304,11 @@ nav{
 
 .desde{
     font-family: Rajdhani;
-    font-size: 15px;
+    font-size: 25px;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
-    line-height: 2.36;
+    line-height: 1;
     letter-spacing: 0.5px;
     text-align: justify;
     color: #fff;
@@ -310,21 +335,23 @@ nav{
 }
 
 .rgbtn{
-    background-color: #48bddf;
+    background: #d90e90;
     font-weight: bold;
+    border-radius: 8px;
 }
 
 .rgbtnn{
-    background-color: #48bddf;
+    background: #d90e90;
     font-weight: bold;
+    border-radius: 8px;
 }
 
 .conoce{
     padding-top: 6rem;
     margin-top: 8rem;
-    font-family: PatsySans;
-    font-size: 40px;
-    font-weight: normal;
+    font-family: Rajdhani;
+    font-size: 55px;
+    font-weight: bold;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
@@ -342,7 +369,7 @@ nav{
 }
 
 .border{
-    border: rgba(34, 80, 105, .51) 2px solid;
+    border: rgba(217, 14, 144, .5) 2px solid;
 }
 
 .l{
@@ -366,7 +393,7 @@ nav{
 }
 
 .blueCard{
-    background-color: rgba(34, 80, 105, .51);
+    background-color: rgba(217, 14, 144, .25);
     margin: 4px;
     text-align: center;
     align-items: center;
@@ -383,7 +410,7 @@ nav{
 }
 
 .blueRectangle{
-    background-color: rgba(34, 80, 105, .51);
+    background-color: rgba(217, 14, 144, .3);
     margin: 4px;
     text-align: center;
     align-items: center;
@@ -401,9 +428,9 @@ nav{
 
 .nuestros{
     padding: 3rem;
-    font-family: PatsySans;
-    font-size: 40px;
-    font-weight: normal;
+    font-family: Rajdhani;
+    font-size: 55px;
+    font-weight: bold;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
@@ -414,9 +441,9 @@ nav{
 
 .prensa{
     margin-top: 5rem;
-    font-family: PatsySans;
-    font-size: 40px;
-    font-weight: normal;
+    font-family: Rajdhani;
+    font-size: 55px;
+    font-weight: bold;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
@@ -488,15 +515,16 @@ nav{
 
 .donde{
     margin-top: 9rem;
-    font-family: PatsySans;
-    font-size: 40px;
-    font-weight: normal;
+    font-family: Rajdhani;
+    font-size: 55px;
+    font-weight: bold;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
     letter-spacing: 1.43px;
     text-align: center;
     color: #fff;
+
 }
 
 .fechas{
@@ -513,7 +541,7 @@ nav{
 
 .no{
     font-family: Rajdhani;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 600;
     font-stretch: normal;
     font-style: normal;
@@ -588,12 +616,11 @@ nav{
 }
 
 .logof{
-    width: 104px;
-    height: 32px;
-    margin-top: 34px;
-    margin-left: 41px;
+    width: 18%;
+    margin-top: 18px;
+    margin-left: 0;
     margin-right: 22px;
-    margin-bottom: 34px;
+    margin-bottom: 5px;
 }
 
 .rigth{
@@ -631,10 +658,10 @@ nav{
 }
 
 .registratea{
-    padding-top: 8rem;
-    font-family: PatsySans;
+    
+    font-family: Rajdhani;
     font-size: 40px;
-    font-weight: normal;
+    font-weight: bold;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.3;
@@ -644,9 +671,10 @@ nav{
 }
 
 .egs{
-    font-family: PatsySans;
-    font-size: 50px;
-    font-weight: normal;
+    padding-top: 8rem;
+    font-family: Rajdhani;
+    font-size: 65px;
+    font-weight: bold;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.04;
@@ -680,7 +708,7 @@ nav{
 }
 
 .registrotxt{
-    font-family: PatsySans;
+    font-family: Rajdhani;
     font-size: 40px;
     font-weight: normal;
     font-stretch: normal;
@@ -694,7 +722,7 @@ nav{
 
 .selecciona{
     font-family: Rajdhani;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 600;
     font-stretch: normal;
     font-style: normal;
@@ -707,9 +735,9 @@ nav{
 }
 
 .registrot{
-    font-family: PatsySans;
-    font-size: 40px;
-    font-weight: normal;
+    font-family: Rajdhani;
+    font-size: 55px;
+    font-weight: bold;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
@@ -724,9 +752,9 @@ nav{
 }
 
 .bienvenido{
-    font-family: PatsySans;
+    font-family: Rajdhani;
   font-size: 40px;
-  font-weight: normal;
+  font-weight: bold;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.3;
@@ -739,30 +767,33 @@ nav{
 
 .agradecemos{
     font-family: Rajdhani;
-    font-size: 13px;
+    font-size: 20px;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.38;
     letter-spacing: normal;
-    text-align: center;
+    text-align: justify;
     color: #fff;
 }
 
 .el{
     font-family: Rajdhani;
-    font-size: 13px;
+    font-size: 18px;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.38;
+    line-height: 1;
     letter-spacing: normal;
     color: #fff;
+    text-transform: none;
+    padding-bottom: 0;
+    width: 100%;
 }
 
 .pre{
     font-family: Rajdhani;
-    font-size: 24px;
+    font-size: 40px;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
@@ -770,11 +801,21 @@ nav{
     letter-spacing: normal;
     color: #fff;
     padding-top: 3rem;
-    padding-bottom: 3rem;
+    
 }
 
-.pre span{
-    font-size: 13px;
+.pres{
+    padding-top: 1rem;
+    font-family: Rajdhani;
+    font-size: 20px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.38;
+    letter-spacing: normal;
+    text-align: justify;
+    color: #fff;
+    padding-bottom: 3rem;
 }
 
 .esp{
@@ -784,7 +825,7 @@ nav{
 
 input[type=text],
 input[type=email]{
-    border: 1px solid gray !important;
+    border: 1px solid white !important;
     margin-top: 7px !important;
     color: white !important;
     padding-left: 5px !important;
@@ -1073,6 +1114,7 @@ input[type=email]{
 
     .rgbtnn{
         margin-top: 2rem;
+        border-radius: 8px;
     }
 
     .impf{

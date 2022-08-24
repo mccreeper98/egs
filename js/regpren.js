@@ -2,17 +2,14 @@ $('#action').on('click', function(){
     var name = $('#name').val();
     var paterno = $('#paterno').val();
     var corporativo = $('#corporativo').val();
-    var personal = $('#personal').val();
     var puesto = $('#puesto').val();
     var sitio = $('#sitio').val();
-    var link = $('#link').val();
-    var link1 = $('#link1').val();
     var identificacion = $('#identificacion').val();
 
     if(name == ''){
         Swal.fire({
         title: 'Error',
-        text: 'Escribe tu nombre',
+        text: 'Escribe tu(s) nombre(s)',
         icon: 'error',
         confirmButtonText: 'Aceptar',
         confirmButtonColor: '#3c91ec',
@@ -25,7 +22,7 @@ $('#action').on('click', function(){
     }else if(paterno == ''){
         Swal.fire({
         title: 'Error',
-        text: 'Escribe tu primer apellido',
+        text: 'Escribe tu(s) apellido(s)',
         icon: 'error',
         confirmButtonText: 'Aceptar',
         confirmButtonColor: '#3c91ec',
@@ -39,19 +36,6 @@ $('#action').on('click', function(){
         Swal.fire({
         title: 'Error',
         text: 'Escribe tu mail corporativo',
-        icon: 'error',
-        confirmButtonText: 'Aceptar',
-        confirmButtonColor: '#3c91ec',
-        color: '#fff',
-        background: '#000',
-        confirmButtonColor: '#48bddf'
-        });
-
-        return false;
-    }else if(personal == ''){
-        Swal.fire({
-        title: 'Error',
-        text: 'Escribe tu mail personal',
         icon: 'error',
         confirmButtonText: 'Aceptar',
         confirmButtonColor: '#3c91ec',
@@ -87,19 +71,6 @@ $('#action').on('click', function(){
         });
 
         return false;
-    }else if(link == '' || link1 == ''){
-        Swal.fire({
-        title: 'Error',
-        text: 'Escribe los link de cobertura',
-        icon: 'error',
-        confirmButtonText: 'Aceptar',
-        confirmButtonColor: '#3c91ec',
-        color: '#fff',
-        background: '#000',
-        confirmButtonColor: '#48bddf'
-        });
-
-        return false;
     }else if(identificacion == ''){
         Swal.fire({
         title: 'Error',
@@ -115,7 +86,8 @@ $('#action').on('click', function(){
         return false;
     }else{
         Swal.showLoading();
-
+        var link = $('#link').val();
+        var link1 = $('#link1').val();
         var data = {
             'name' : name,
             'paterno' : paterno,

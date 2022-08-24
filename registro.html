@@ -25,6 +25,13 @@
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+    <style>
+      .fijo{
+        background-position: 0 -1000px
+      }
+    </style>
+  
   </head>
 
   <body>
@@ -62,15 +69,16 @@
         </nav>
       </div>
       
-      <div class="fijo" style="margin-top: -72px;" id="">
+      <div class="fijo alto" style="margin-top: -72px;" id="">
 
         <section class="" id="dondw">
-          <p class="registratea">
-            ¡ReGístrate al evento de gaming <br> más importante del año!
-          </p>
 
           <p class="egs">
-            Electronic Game Show
+            ENTERTAINMENT GAMING SHOW
+          </p>
+
+          <p class="registratea">
+            ¡Regístrate ahora!
           </p>
 
           <p class="fechasel" style="margin-top: 5rem;">
@@ -87,19 +95,16 @@
           </p>
           <br>
 
-          <p class="registrotxt">
-            Registro
-          </p>
           <p class="selecciona">
             Selecciona tu perfil para regístrarte
           </p>
 
           <div class="container">
             <div class="hpan" style="justify-content: space-evenly;">
-                <a class="waves-effect waves-light btn rgbtnn">ASISTENTE</a>
+                <a class="waves-effect waves-light btn rgbtnn">COSPLAY</a>
                 <a href="registroPrensa.html" class="waves-effect waves-light btn rgbtnn">PRENSA</a>
-                <a class="waves-effect waves-light btn rgbtnn">PATROCINADOR</a>
-                <a class="waves-effect waves-light btn rgbtnn">TÉCNICO</a>
+                <a class="waves-effect waves-light btn rgbtnn">TORNEOS</a>
+                <a class="waves-effect waves-light btn rgbtnn">STREAMING</a>
             </div>
           </div>
         </section>
@@ -175,8 +180,6 @@
       src="https://code.jquery.com/jquery-3.2.1.min.js"
     ></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script src="js/particles.js"></script>
-    <script src="js/appr.js"></script>
 
     <script>
       $(document).ready(function () {
@@ -185,13 +188,12 @@
         $(window).scroll(function(){
           var barra = $(window).scrollTop();
           var multiplo = $(window).width() < 500 ? 0.1 : 0.3;
-          var posicion = barra * multiplo;
+          var posicion = 1000 +(barra * multiplo);
 
           $('.fijo').css({
             'background-position': '0 -'+posicion+'px'
           });
 
-          console.log(posicion);
         });
       });
 

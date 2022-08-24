@@ -5216,7 +5216,7 @@ small {
 }
 
 .btn:hover, .btn-large:hover {
-  background-color: #2bbbad;
+  background-color: #48bddf;
 }
 
 .btn-floating {
@@ -6697,7 +6697,7 @@ form p:last-child {
   width: 31px;
   height: 31px;
   z-index: 0;
-  border: 2px solid #5a5a5a;
+  border: 2px solid #fff;
   border-radius: 1px;
   margin-top: 2px;
   -webkit-transition: .2s;
@@ -7416,7 +7416,7 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 .side-nav li > a.btn:hover, .side-nav li > a.btn-large:hover, .side-nav li > a.btn-large:hover {
-  background-color: #2bbbad;
+  background-color: #48bddf;
 }
 
 .side-nav li > a.btn-floating:hover {
